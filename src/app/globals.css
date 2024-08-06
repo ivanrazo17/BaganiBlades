@@ -93,9 +93,49 @@
 }
 
 .card-no-radius {
-  border-radius: 0;
+  border-radius: none;
+}
+
+.card-radius {
+  border-radius: 10px;
 }
 
 .card-no-border {
   border: none;
+}
+
+.glow-white {
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+}
+
+.glow-black {
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+}
+
+.logo-small {
+  width: 50px;
+  height: 50px;
+}
+
+.category-underline {
+  position: relative;
+  display: inline-block;
+}
+
+.category-underline::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: #4200FF;
+  height: 2px;
+  width: 100%;
+  transform: scaleX(0);
+  transform-origin: bottom right;
+  transition: transform 0.3s ease-in-out;
+}
+
+.category-underline:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
 }

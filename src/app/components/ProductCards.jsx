@@ -3,7 +3,6 @@
 import React from 'react'
 import {
     Card,
-    CardContent,
     CardDescription,
     CardFooter,
     CardHeader,
@@ -51,7 +50,7 @@ export const ProductList = [
         id: 5,
         name: 'Hylian Shield - Legend of Zelda',
         price:'₱2000',
-        imageSrc:'/assets/ProductList/item6.png',
+        imageSrc:'./assets/ProductList/item6.png',
         href: '#'
     }
 ];
