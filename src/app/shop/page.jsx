@@ -11,8 +11,8 @@ import {
 } from "@/components/ui/card";
 import { Star, ShoppingCart } from "lucide-react";
 import Navbar from "../components/Navbar";
-import Image from "next/image";
 import Footer from "../components/Footer";
+import Image from "next/image";
 
 export const ProductList = [
   {
@@ -57,11 +57,74 @@ export const ProductList = [
     imageSrc: "/assets/ProductList/item6.png",
     href: "Hylian Shield Legend of Zelda",
   },
+  {
+    id: 6,
+    name: "Kaigaku Sword - Demon Slayer",
+    price: "₱1000",
+    imageSrc: "/assets/ProductList/item7.png",
+    href: "Kaigaku Sword Demon Slayer",
+  },
+  {
+    id: 7,
+    name: "Ebony and Ivory - Devil May Cry",
+    price: "₱2000",
+    imageSrc: "/assets/ProductList/item8.png",
+    href: "Ebony and Ivory Devil May Cry",
+  },
+  {
+    id: 8,
+    name: "Cannon Mina Ashiro - Kaiju No.8",
+    price: "₱2000",
+    imageSrc: "/assets/ProductList/item9.png",
+    href: "Cannon Mina Ashiro Kaiju No.8",
+  },
+  {
+    id: 9,
+    name: "Staff of Homa - Genshin Impact",
+    price: "₱2000",
+    imageSrc: "/assets/ProductList/item10.png",
+    href: "Staff of Homa Genshin Impact",
+  },
+  {
+    id: 10,
+    name: "Divine Axe Rhitta - Seven Deadly Sins",
+    price: "₱2000",
+    imageSrc: "/assets/ProductList/item11.png",
+    href: "Divine Axe Rhitta Seven Deadly Sins",
+  },
+  {
+    id: 11,
+    name: "VCT LOCK//IN Knife - Valorant",
+    price: "₱2000",
+    imageSrc: "/assets/ProductList/item12.png",
+    href: "VCT LOCKIN Knife Valorant",
+  },
+  {
+    id: 12,
+    name: "Sentinel of Light Vandal - Valorant",
+    price: "₱5000",
+    imageSrc: "/assets/ProductList/item13.png",
+    href: "Sentinel of Light Vandal Valorant",
+  },
+  {
+    id: 13,
+    name: "Saw Cleaver - Bloodborne",
+    price: "₱7000",
+    imageSrc: "/assets/ProductList/item14.png",
+    href: "Saw Cleaver Bloodborne",
+  },
+  {
+    id: 14,
+    name: "Moon Stick Wand - Sailor Moon",
+    price: "₱2000",
+    imageSrc: "/assets/ProductList/item15.png",
+    href: "Moon Stick Wand Sailor Moon",
+  },
 ];
 
 const ProductCards = () => {
   return (
-    <>
+    <div>
       <Navbar />
       <div className="flex flex-col-2 px-10">
         <div className="w-[600px] mt-8 ">
@@ -115,9 +178,9 @@ const ProductCards = () => {
                       height={500}
                       alt={item.name}
                       priority={true}
-                      className="w-full h-[289px] object-cover"
+                      className="w-full h-[289px] object-cover m-0"
                     />
-                    <CardTitle className="font-light text-[18px] truncate ml-6">
+                    <CardTitle className="font-light text-[18px] truncate mx-6">
                       {item.name}
                     </CardTitle>
                     <CardDescription className="text-custom-purple ml-6">
@@ -145,7 +208,7 @@ const ProductCards = () => {
         </div>
       </div>
       <Footer />
-    </>
+    </div>
   );
 };
 
