@@ -15,42 +15,42 @@ export const ProductList = [
         id: 0,
         name: 'Blade of Olympus - God of War',
         price:'₱5000',
-        imageSrc:'./assets/ProductList/item1.png',
+        imageSrc:'/assets/ProductList/item1.png',
         href: '#'
     },
     {
         id: 1,
         name: 'Iron Man Suit Full Body Armor - Iron Man',
         price:'₱50000',
-        imageSrc:'./assets/ProductList/item2.png',
+        imageSrc:'/assets/ProductList/item2.png',
         href: '#'
     },
     {
         id: 2,
         name: 'The Dominator - Psycho-Pass',
         price:'₱9000',
-        imageSrc:'./assets/ProductList/item3.png',
+        imageSrc:'/assets/ProductList/item3.png',
         href: '#'
     },
     {
         id: 3,
         name: 'Chainsaw - Chainsaw Man',
         price:'₱5000',
-        imageSrc:'./assets/ProductList/item4.png',
+        imageSrc:'/assets/ProductList/item4.png',
         href: '#'
     },
     {
         id: 4,
         name: 'ODM Gear - Attack on Titan',
         price:'₱8000',
-        imageSrc:'./assets/ProductList/item5.png',
+        imageSrc:'/assets/ProductList/item5.png',
         href: '#'
     },
     {
         id: 5,
         name: 'Hylian Shield - Legend of Zelda',
         price:'₱2000',
-        imageSrc:'./assets/ProductList/item6.png',
+        imageSrc:'/assets/ProductList/item6.png',
         href: '#'
     }
 ];

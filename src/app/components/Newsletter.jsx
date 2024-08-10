@@ -5,7 +5,7 @@ const Newsletter = () => {
   return (
     <div className="relative w-full h-[300px] sm:h-[400px] lg:h-[600px] overflow-hidden">
         <img 
-            src="./assets/Contact/Newsletter.png" 
+            src="/assets/Contact/Newsletter.png" 
             alt="Newsletter Background" 
             className="absolute inset-0 w-full h-full object-cover object-bottom" 
         />
