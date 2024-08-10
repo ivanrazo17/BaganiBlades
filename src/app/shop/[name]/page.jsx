@@ -21,7 +21,6 @@ export default function ProductPage() {
     return (
         
         <div className="product-page">
-            <Navbar />
 
             <div className="w-full h-full px-[200px] py-4">
                 {/* Breadcrumbs */}

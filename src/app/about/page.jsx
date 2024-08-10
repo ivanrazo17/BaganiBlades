@@ -8,8 +8,6 @@ import Image from 'next/image';
 function page() {
   return (
     <>
-      <Navbar />
-
       {/* About Us Hero Banner */}
       <div className="relative h-[725px] w-full">
         <Image

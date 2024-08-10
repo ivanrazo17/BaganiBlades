@@ -139,3 +139,7 @@
   transform: scaleX(1);
   transform-origin: bottom left;
 }
+
+.dialog-content .dialog-close-button {
+  display: none;
+}

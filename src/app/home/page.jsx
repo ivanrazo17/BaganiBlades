@@ -5,14 +5,12 @@ import ProductSlider from "../components/ProductSlider";
 import Testimonial from "../components/Testimonial";
 import Newsletter from "../components/Newsletter";
 import Image from "next/image";
-import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 
 import Link from "next/link";
 const Home = () => {
   return (
     <>
-      <Navbar />
       {/* Banner */}
       <div className="flex flex-col items-center justify-center p-4  bg-[radial-gradient(circle_at_top,_#FFFFFF,_#E0E0E0,_#8F8F8F)] h-[300px] md:h-[552px] lg:h-[552px]">
         <div className="flex items-center transform scale-80">

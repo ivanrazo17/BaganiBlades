@@ -26,34 +26,37 @@ export const navLinks = [
     name: "Contact Us",
     href: "/contact",
   },
-  {
-    id: 4,
-    name: "Sign up",
-    href: "#",
-  },
-  {
-    id: 5,
-    name: "Sign in",
-    href: "#",
-  },
 ];
 
-const NavLinks = () => {
+const NavLinks = ({ userId }) => {
   const pathname = usePathname();
+
+  // Define the sign-in/sign-up or account link based on userId
+  const authLinks = userId
+    ? [
+        { id: 4, name: "My Account", href: "/dashboard" }
+      ]
+    : [
+        { id: 4, name: "Sign up", href: "/sign-up" },
+        { id: 5, name: "Sign in", href: "/sign-in" }
+      ];
+
+  // Combine standard navLinks with authLinks
+  const links = [...navLinks, ...authLinks];
 
   return (
     <div className="hidden lg:flex justify-center items-center col-span-6 gap-x-2">
-      {navLinks.map((item) => (
+      {links.map((item) => (
         <Link
-          href={item.href}
           key={item.id}
+          href={item.href}
           className={cn(
             "hover:bg-muted hover:bg-opacity-75 hover:text-custom-purple",
             item.name === "Sign in"
               ? "bg-[#1c1c1c] text-custom-white hover:bg-[#000000] hover:text-custom-white"
               : "",
             "group flex items-center px-5 py-2.5 font-medium rounded-3xl",
-            pathname === item.href ? "bg-muted text-custom-purple" : "" // Apply the muted background color for the active page
+            pathname === item.href ? "bg-muted text-custom-purple" : ""
           )}
         >
           {item.name}
