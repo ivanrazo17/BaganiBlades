@@ -1,5 +1,5 @@
 import React from "react";
-import { Button } from "@/components/ui/button";
+import { Button } from "../../components/ui/button";
 import ProductCards from "../components/ProductCards";
 import ProductSlider from "../components/ProductSlider";
 import Testimonial from "../components/Testimonial";

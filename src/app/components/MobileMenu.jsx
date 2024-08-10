@@ -1,8 +1,8 @@
 "use client";
 
 import React from 'react'
-import { Sheet, SheetTrigger, SheetContent } from "@/components/ui/sheet"
-import { Button } from '@/components/ui/button'
+import { Sheet, SheetTrigger, SheetContent } from "../../components/ui/sheet"
+import { Button } from '../../components/ui/button'
 import { Menu } from 'lucide-react'
 import { navLinks } from './NavLinks'
 import Link from 'next/link';

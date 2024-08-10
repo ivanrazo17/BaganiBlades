@@ -6,9 +6,9 @@ import {
     CardFooter,
     CardHeader,
     CardTitle,
-} from "@/components/ui/card";
+} from "../../../components/ui/card";
 import { Star, ShoppingCart } from 'lucide-react';
-import { ProductList } from '@/app/components/ProductCards.jsx';
+import { ProductList } from '../../../app/components/ProductCards.jsx';
 import Image from 'next/image';
 
 const LimitedProductCards = ({ maxItems }) => {

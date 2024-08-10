@@ -1,26 +1,22 @@
 "use client";
 
 import React from "react";
-import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
-import Newsletter from "../components/Newsletter";
 import Image from "next/image";
 
-import { Button } from "@/components/ui/button";
+import { Button } from "../../components/ui/button";
 import {
   Form,
   FormControl,
-  FormDescription,
   FormField,
   FormItem,
-  FormLabel,
   FormMessage,
-} from "@/components/ui/form";
+} from "../../components/ui/form";
 
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
 import { z } from "zod";
-import { Input } from "@/components/ui/input";
+import { Input } from "../../components/ui/input";
 
 const FormSchema = z.object({
   name: z.string().min(1, { message: "Name is required." }),

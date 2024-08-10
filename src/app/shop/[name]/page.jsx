@@ -1,14 +1,13 @@
 "use client";
 import { useParams } from 'next/navigation'; 
 import Link from 'next/link.js';
-import Navbar from '@/app/components/Navbar.jsx';
 import ProductMenu from './ProductMenu.jsx';
 import Description from './Description.jsx';
 import ProductData from '../ProductData.js';
 import Review from './Review.jsx';
 import LimitedProductCards from './LimitedProductCards.jsx';
-import Newsletter from '@/app/components/Newsletter.jsx';
-import Footer from '@/app/components/Footer.jsx';
+import Newsletter from '../../../app/components/Newsletter.jsx';
+import Footer from '../../../app/components/Footer.jsx';
 
 export default function ProductPage() {
     // Extract the product name from the URL

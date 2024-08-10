@@ -1,7 +1,7 @@
 import React from 'react'
 import { useState } from 'react';
 import { useParams } from 'next/navigation';
-import { Button } from "@/components/ui/button"
+import { Button } from "../../../components/ui/button"
 import Image from 'next/image'
 import ProductData from '../ProductData.js';
 
