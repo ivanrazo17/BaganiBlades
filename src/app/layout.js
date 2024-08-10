@@ -1,8 +1,10 @@
+// Your existing RootLayout code
 import { Poppins } from "next/font/google";
 import "./globals.css";
 import { ClerkProvider } from '@clerk/nextjs';
 import ClientWrapper from './components/ClientWrapper'; // Import the client-side wrapper
 import { auth } from '@clerk/nextjs/server';
+import BackToTopButton from './components/BackToTopButton'; // Import the BackToTopButton component
 
 const poppins = Poppins({ weight: ['100', '200', '300', '400', '500', '600', '700', '800', '900'], subsets: ["latin"] });
 
@@ -21,6 +23,7 @@ export default async function RootLayout({ children }) {
         <body className={poppins.className}>
           <ClientWrapper userId={userId}>
             {children}
+            <BackToTopButton /> {/* Add the BackToTopButton here */}
           </ClientWrapper>
         </body>
       </html>
