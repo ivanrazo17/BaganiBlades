@@ -62,7 +62,7 @@ const ProductCards = () => {
       {ProductList.map((item) => (
         <Card
           key={item.id}
-          className="w-full h-[400px] bg-[#f9fafc] card-no-radius card-no-border"
+          className="m-2 h-[350px] sm:h-[400px] bg-[#F9FAFC] card-no-radius card-no-border"
         >
           <CardHeader className="p-0">
             <Image
@@ -71,15 +71,13 @@ const ProductCards = () => {
               height={500}
               alt={item.name}
               priority={true}
-              className="w-full h-[289px] object-cover"
+              className="w-full h-[250px] sm:h-[289px] object-cover m-0"
             />
-           
 
-            <CardTitle className="font-light text-[18px] truncate ml-6">
+            <CardTitle className="font-light text-[16px] sm:text-[18px] truncate md:px-6 md:text-start text-center">
               {item.name}
             </CardTitle>
-
-            <CardDescription className="text-custom-purple ml-6">
+            <CardDescription className="text-custom-purple md:px-6 md:text-start text-center">
               {item.price}
             </CardDescription>
           </CardHeader>

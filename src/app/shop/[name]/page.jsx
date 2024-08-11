@@ -21,7 +21,7 @@ export default function ProductPage() {
         
         <div className="product-page">
 
-            <div className="w-full h-full px-[200px] py-4">
+            <div className="w-full h-full flex flex-col items-center justify-center">
                 {/* Breadcrumbs */}
                 <span className='flex flex-row-1 gap-2 text-[#504d4d] m-3'>
                     <Link href="/">
@@ -43,18 +43,18 @@ export default function ProductPage() {
                 </div>
 
                 {/* Description Component */}
-                <div>
+              
                     <Description/>
-                </div>
+                
 
                 {/* Review Component */}
-                <div>
+                
                     <Review/>    
-                </div> 
+                
 
                 {/* Other Products */}
                 <div className='mb-6'>
-                    <h1 className='font-semibold text-2xl mb-4'>You may also like</h1>
+                    <h1 className='font-semibold text-2xl mb-4 px-4'>You may also like</h1>
                     <LimitedProductCards maxItems={3} />  {/* Use the new component */}
                 </div>
                 

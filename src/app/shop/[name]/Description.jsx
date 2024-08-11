@@ -12,7 +12,7 @@ const Description = () => {
     const descriptionHtml = product.description.replace(/\\n/g, '<br />');
 
     return (
-        <div className='bg-[#F3F4F8] mt-3 rounded-lg'>
+        <div className='bg-[#F3F4F8] mt-3 rounded-lg w-[95%] md:w-4/5 '>
             <h1 className='font-semibold text-lg p-2'>Description</h1>
             <p className='font-light text-base mb-2 p-3' dangerouslySetInnerHTML={{ __html: descriptionHtml }} />
         </div>
