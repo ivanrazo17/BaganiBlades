@@ -16,44 +16,46 @@ const LimitedProductCards = ({ maxItems }) => {
     const itemsToDisplay = ProductList.slice(0, maxItems);
 
     return (
-        <div className="grid gap-4 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 lg:gap-10">
+      <div className="grid gap-4 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 lg:gap-10">
         {itemsToDisplay.map((item) => (
-            <Card key={item.id} className='w-full h-[400px] bg-[#F9FAFC] card-no-radius card-no-border'>
-            <CardHeader className='p-0'>
-                <Image
-                    src={item.imageSrc}
-                    width={500}
-                    height={500}
-                    alt={item.name}
-                    priority={true}
-                    className="w-full h-[289px] object-cover m-0"                                 
-                />
-                <CardTitle className='font-light text-[18px] truncate ml-6'>
-                {item.name}
-                </CardTitle>
+          <Card
+            key={item.id}
+            className="m-2 h-[350px] sm:h-[400px] bg-[#F9FAFC] card-no-radius card-no-border"
+          >
+            <CardHeader className="p-0">
+              <Image
+                src={item.imageSrc}
+                width={500}
+                height={500}
+                alt={item.name}
+                priority={true}
+                className="w-full h-[250px] sm:h-[289px] object-cover m-0"
+              />
 
-                <CardDescription className='text-custom-purple ml-6'>
+              <CardTitle className="font-light text-[16px] sm:text-[18px] truncate md:px-6 md:text-start text-center">
+                {item.name}
+              </CardTitle>
+              <CardDescription className="text-custom-purple md:px-6 md:text-start text-center">
                 {item.price}
-                </CardDescription>
+              </CardDescription>
             </CardHeader>
 
-            <CardFooter className='flex items-center justify-between pt-4'>
-                <div className='flex items-center gap-1 group'>
-                <Star className='text-yellow-500 fill-yellow-500' />
-                <span className='font-light'>4.8</span>
-                </div>
+            <CardFooter className="flex items-center justify-between pt-4">
+              <div className="flex items-center gap-1 group">
+                <Star className="text-yellow-500 fill-yellow-500" />
+                <span className="font-light">4.8</span>
+              </div>
 
-                <div className='flex items-center gap-1 group'>
-                <ShoppingCart className='transition-colors duration-300 group-hover:text-custom-purple cursor-pointer' />
-                <span className='font-light transition-colors duration-300 group-hover:text-custom-purple cursor-pointer'>
-                    Add to Cart
+              <div className="flex items-center gap-1 group">
+                <ShoppingCart className="transition-colors duration-300 group-hover:text-custom-purple cursor-pointer" />
+                <span className="font-light transition-colors duration-300 group-hover:text-custom-purple cursor-pointer">
+                  Add to Cart
                 </span>
-                </div>
+              </div>
             </CardFooter>
-
-            </Card>
+          </Card>
         ))}
-        </div>
+      </div>
     );
 };
 
