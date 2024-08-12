@@ -2,140 +2,11 @@
 
 import React, { useState } from "react";
 import Link from "next/link";
-import {
-  Card,
-  CardDescription,
-  CardFooter,
-  CardHeader,
-  CardTitle,
-} from "../../components/ui/card";
+import { Card, CardDescription, CardFooter, CardHeader, CardTitle } from "../../components/ui/card";
 import { Star, ShoppingCart } from "lucide-react";
 import Footer from "../components/Footer";
 import Image from "next/image";
-
-const ProductList = [
-  {
-    id: 0,
-    name: "Blade of Olympus - God of War",
-    price: "₱5000",
-    imageSrc: "/assets/ProductList/item1.png",
-    category: "Melee",
-    href: "Blade of Olympus God of War",
-  },
-  {
-    id: 1,
-    name: "Iron Man Suit Full Body Armor - Iron Man",
-    price: "₱50000",
-    imageSrc: "/assets/ProductList/item2.png",
-    category: "Armor",
-    href: "Iron Man Suit Full Body Armor Iron Man",
-  },
-  {
-    id: 2,
-    name: "The Dominator - Psycho-Pass",
-    price: "₱9000",
-    imageSrc: "/assets/ProductList/item3.png",
-    category: "Firearms",
-    href: "The Dominator Psycho-Pass",
-  },
-  {
-    id: 3,
-    name: "Chainsaw - Chainsaw Man",
-    price: "₱5000",
-    imageSrc: "/assets/ProductList/item4.png",
-    category: "Melee",
-    href: "Chainsaw Chainsaw Man",
-  },
-  {
-    id: 4,
-    name: "ODM Gear - Attack on Titan",
-    price: "₱8000",
-    imageSrc: "/assets/ProductList/item5.png",
-    category: "Melee",
-    href: "ODM Gear Attack on Titan",
-  },
-  {
-    id: 5,
-    name: "Hylian Shield - Legend of Zelda",
-    price: "₱2000",
-    imageSrc: "/assets/ProductList/item6.png",
-    category: "Shields",
-    href: "Hylian Shield Legend of Zelda",
-  },
-  {
-    id: 6,
-    name: "Kaigaku Sword - Demon Slayer",
-    price: "₱1000",
-    imageSrc: "/assets/ProductList/item7.png",
-    category: "Melee",
-    href: "Kaigaku Sword Demon Slayer",
-  },
-  {
-    id: 7,
-    name: "Ebony and Ivory - Devil May Cry",
-    price: "₱2000",
-    imageSrc: "/assets/ProductList/item8.png",
-    category: "Firearms",
-    href: "Ebony and Ivory Devil May Cry",
-  },
-  {
-    id: 8,
-    name: "Cannon Mina Ashiro - Kaiju No.8",
-    price: "₱2000",
-    imageSrc: "/assets/ProductList/item9.png",
-    category: "Firearms",
-    href: "Cannon Mina Ashiro Kaiju No.8",
-  },
-  {
-    id: 9,
-    name: "Staff of Homa - Genshin Impact",
-    price: "₱2000",
-    imageSrc: "/assets/ProductList/item10.png",
-    category: "Polearms",
-    href: "Staff of Homa Genshin Impact",
-  },
-  {
-    id: 10,
-    name: "Divine Axe Rhitta - Seven Deadly Sins",
-    price: "₱2000",
-    imageSrc: "/assets/ProductList/item11.png",
-    category: "Melee",
-    category: "Melee",
-    href: "Divine Axe Rhitta Seven Deadly Sins",     
-  },
-  {
-    id: 11,
-    name: "VCT LOCK//IN Knife - Valorant",
-    price: "₱2000",
-    imageSrc: "/assets/ProductList/item12.png",
-    category: "Melee",
-    href: "VCT LOCKIN Knife Valorant",
-  },
-  {
-    id: 12,
-    name: "Sentinel of Light Vandal - Valorant",
-    price: "₱5000",
-    imageSrc: "/assets/ProductList/item13.png",
-    category: "Firearms",
-    href: "Sentinel of Light Vandal Valorant",
-  },
-  {
-    id: 13,
-    name: "Saw Cleaver - Bloodborne",
-    price: "₱7000",
-    imageSrc: "/assets/ProductList/item14.png",
-    category: "Melee",
-    href: "Saw Cleaver Bloodborne",
-  },
-  {
-    id: 14,
-    name: "Moon Stick Wand - Sailor Moon",
-    price: "₱2000",
-    imageSrc: "/assets/ProductList/item15.png",
-    category: "Staves",
-    href: "Moon Stick Wand Sailor Moon",
-  },
-];
+import ProductList from "./ProductList";
 
 const ProductCards = () => {
   const [selectedCategory, setSelectedCategory] = useState("All");
@@ -151,7 +22,7 @@ const ProductCards = () => {
   return (
     <>
       <div className="flex flex-col md:flex-row my-6">
-        <div className="w-full md:w-[300px]  p-10">
+        <div className="w-full md:w-[300px] p-10">
           <h1 className="text-[22px] md:text-[25px] font-extrabold text-center mb-4">
             FEATURED PRODUCTS
           </h1>
