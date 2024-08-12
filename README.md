@@ -1,6 +1,6 @@
 # Bagani Blades
 
-Welcome to Bagani Blades! A front-end e-commerce platform specializing in custom-made cosplay weapons and armor props. Our site offers a wide range of immersive and high-quality products to enhance your cosplay experience.
+Welcome to Bagani Blades! A front-end e-commerce platform with mobile responsiveness, specializing in custom-made cosplay weapons and armor props. Our site offers a wide range of immersive and high-quality products to enhance your cosplay experience.
 
 ## Website Overview
 
