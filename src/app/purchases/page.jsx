@@ -9,18 +9,36 @@ export default async function UserProfile() {
   const { userId } = auth();
 
   if (!userId) {
-    return <div>Unauthorized</div>;
+    return (
+      <div className="flex items-center justify-center min-h-screen bg-gray-100">
+        <div className="text-red-500 font-semibold text-xl">
+          Unauthorized
+        </div>
+      </div>
+    );
   }
 
   let user;
   try {
     user = await currentUser();
   } catch (error) {
-    return <div>Error fetching user data</div>;
+    return (
+      <div className="flex items-center justify-center min-h-screen bg-gray-100">
+        <div className="text-red-500 font-semibold text-xl">
+          Error fetching user data
+        </div>
+      </div>
+    );
   }
 
   if (!user) {
-    return <div>Loading...</div>;
+    return (
+      <div className="flex items-center justify-center min-h-screen bg-gray-100">
+        <div className="text-gray-500 font-semibold text-xl">
+          Loading...
+        </div>
+      </div>
+    );
   }
 
   // Ensure `user` is a plain object
