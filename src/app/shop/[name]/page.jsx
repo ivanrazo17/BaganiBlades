@@ -69,17 +69,17 @@ export default function ProductPage() {
                 </h1>
                 <Image
                     src="/assets/Contact/Payments.png"
+                    width={800}
+                    height={800}
                     alt="Payment Methods"
+                    priority={true}
                     className="
-                        object-cover 
-                        mb-6
-                        w-3/4 sm:w-2/3 md:w-1/2 lg:w-1/3
-                        max-w-full 
-                        h-auto
-                    "
-                    layout="responsive"
-                    width={800} 
-                    height={600} 
+                                object-cover 
+                                mb-6
+                                w-3/4 sm:w-2/3 md:w-1/2 lg:w-1/3
+                                max-w-full 
+                                h-auto
+                            "
                 />
             </div>
             {/* Footer */}
