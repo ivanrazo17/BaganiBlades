@@ -1,36 +1,33 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Bagani Blades
 
-## Getting Started
+Welcome to Bagani Blades! We are an e-commerce platform specializing in custom-made cosplay weapons and armor props. Our site offers a wide range of immersive and high-quality products to enhance your cosplay experience.
 
-First, run the development server:
+## Website Overview
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Bagani Blades features:
+- **Custom-Made Cosplay Weapons**: Explore our collection of unique and handcrafted weapons.
+- **Integrated Electronics**: For a more immersive experience.
+- **User-Friendly Interface**: Designed with ReactJS and Next.js for a seamless shopping experience.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+![Website Thumbnail](/thumbnails/thumbnails.PNG)
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## Tech Stack
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+Our website is built with the following technologies:
 
-## Learn More
+- **Next.js**: A React framework for server-side rendering and static site generation.
+- **ReactJS**: A JavaScript library for building user interfaces.
+- **Tailwind CSS**: A utility-first CSS framework for styling.
+- **Lucide Icons**: For modern and customizable icons.
+- **Figma**: Used for UI/UX design of the e-commerce site.
+- **Clerk**: For authentication and user management.
 
-To learn more about Next.js, take a look at the following resources:
+## Installation
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+To clone and set up the Bagani Blades project locally, follow these steps:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+1. **Clone the Repository**:
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+   ```bash
+   git clone https://github.com/ivanrazo17/BaganiBlades.git
+   cd BaganiBlades
