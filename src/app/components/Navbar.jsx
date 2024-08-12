@@ -2,7 +2,7 @@
 import React from "react";
 import NavLinks from "./NavLinks";
 import { ShoppingCart, CircleUserRound } from "lucide-react";
-import SearchBar from "./Searchbar";
+import SearchBar from "./SearchBar";
 import MobileMenu from "./MobileMenu";
 import Logo from "./Logo";
 import { UserButton } from "@clerk/nextjs";
