@@ -22,7 +22,7 @@ Our website is built with the following technologies:
 - **Tailwind CSS**: Used for styling the front-end of Bagani Blades.
 - **Lucide Icons**: Used For modern and customizable icons.
 - **shadcn**: Certain components were used for enhanced UI components and styling.
-- **Figma**: Used for UI/UX design of the e-commerce site.
+- **Figma**: Used for UI/UX design of the e-commerce site. You can view the design [here](https://figmashort.link/dTJ8Ak).
 - **Clerk Authentication**: Used as an authentication API for user management.
 
 ## Installation
