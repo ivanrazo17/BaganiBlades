@@ -34,7 +34,7 @@ const NavLinks = ({ userId }) => {
   // Define the sign-in/sign-up or account link based on userId
   const authLinks = userId
     ? [
-        { id: 4, name: "My Account", href: "/dashboard" }
+        { id: 4, name: "My Purchases", href: "/purchases" }
       ]
     : [
         { id: 4, name: "Sign up", href: "/sign-up" },

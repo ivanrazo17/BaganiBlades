@@ -3,7 +3,7 @@ import React from 'react';
 import { auth, currentUser } from "@clerk/nextjs/server";
 import MyPurchasePage from './MyPurchasePage.jsx';
 import { ShoppingCart, Bell, Tag } from 'lucide-react'; // Import Lucide icons
-import Link from 'next/link.js';
+import Image from 'next/image.js';
 
 export default async function UserProfile() {
   const { userId } = auth();
@@ -33,11 +33,19 @@ export default async function UserProfile() {
   };
 
   return (
-    <div className="flex h-screen">
+    <div className="flex flex-col lg:flex-row h-screen">
       {/* User Info Section */}
-      <div className="flex-shrink-0 w-1/4 p-6 border-r border-gray-300">
+      <div className="flex-shrink-0 w-full lg:w-1/4 p-6 border-b lg:border-r border-gray-300 lg:border-b-0">
         <div className="flex items-center mb-6">
-          <img src={userData.image} alt="User Image" className="w-16 h-16 rounded-full mr-4" />
+          <div className="relative w-16 h-16 mr-4">
+            <Image
+              src={userData.image}
+              alt="User Image"
+              layout="fill"
+              objectFit="cover"
+              className="rounded-full"
+            />
+          </div>
           <div>
             <h1 className="text-md font-bold">{userData.firstName} {userData.lastName}</h1>
             <p className="text-sm text-gray-600">{userData.email}</p>

@@ -53,19 +53,29 @@ function Page() {
     <>
 
       {/* About Us Hero Banner */}
-      <div className="relative h-[725px] w-full">
+      <div className="relative w-full h-[400px] md:h-[600px] lg:h-[725px]">
         <Image
           src="/assets/Contact/Banner.png"
           layout="fill"
           alt="Banner"
           priority={true}
-          className="-z-10"
+          className="-z-10 object-cover"
         />
 
-        <div className="absolute flex flex-col justify-center items-center bottom-12 w-full z-10">
-          <h1 className="text-center font-poppins font-bold md:text-6xl text-4xl px-2">
+        <div className="absolute flex flex-col justify-center items-center bottom-8 lg:bottom-20 w-full z-10">
+          <Image
+            src="/assets/AboutUs/Logo.png"
+            width={60} 
+            height={60}
+            alt="Banner"
+            priority={true}
+            className="block md:hidden mt-8"
+          />
+
+          <h1 className="text-center font-bold md:text-6xl text-4xl px-2">
             CONTACT US
           </h1>
+          
           <div className="flex flex-row justify-center items-center gap-2 ">
             <Image
               src="/assets/AboutUs/Logo.png"
@@ -75,7 +85,7 @@ function Page() {
               priority={true}
               className="hidden md:block"
             />
-            <p className="text-center font-poppins font-light md:text-2xl md:w-1/2 px-8 md:px-0 w-full mt-20">
+            <p className="text-center font-poppins font-light md:text-2xl md:w-1/2 px-8 md:px-0 w-full mt-3 lg:mt-20">
               Let’s Chat! We’re here to help you with any questions or concerns
               you may have!
             </p>
@@ -91,7 +101,7 @@ function Page() {
         </div>
       </div>
 
-      <div className="flex flex-col w-full  h-full justify-center px-10 md:px-0 mb-10 space-y-10">
+      <div className="flex flex-col w-full h-full justify-center px-10 md:px-0 mb-10 space-y-10">
         <div className="md:w-1/2 md:self-center">
           <h1 className="font-poppins font-bold text-xl">
             Customer Support Hours:

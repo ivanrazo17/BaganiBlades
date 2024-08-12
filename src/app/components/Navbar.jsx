@@ -16,9 +16,11 @@ export default function Navbar({ userId }) {
         <nav className="relative max-w-full flex flex-col mt-10 md:grid md:grid-cols-12 px-2 md:px-4 mx-auto py-2">
           <div className="w-full flex justify-end items-center md:col-span-12">
             {/* Cart and Account icons visible only on small screens */}
-            <div className="flex lg:hidden items-center space-x-2 absolute right-0 top-0">
-              <ShoppingCart />
-              {userId ? <UserButton /> : <CircleUserRound />}
+            <div className="flex lg:hidden items-center space-x-4 absolute right-0 -top-2 z-10">
+              <Link href="/checkout">
+                <ShoppingCart />
+              </Link>
+              {userId ? <UserButton /> : <Link href="/sign-in"><CircleUserRound /></Link>}
             </div>
             <NavLinks userId={userId} />
           </div>
@@ -34,12 +36,12 @@ export default function Navbar({ userId }) {
               <div className="relative flex items-center">
                 <SearchBar />
                 <div className="lg:hidden flex justify-end">
-                  <MobileMenu />
+                  <MobileMenu userId={userId} />
                 </div>
               </div>
             </div>
             {/* Cart and Account Icons */}
-            <div className="hidden lg:flex items-center space-x-8">
+            <div className="hidden lg:flex items-center space-x-8 ">
               <Link href="/checkout">
                 <ShoppingCart />
               </Link>

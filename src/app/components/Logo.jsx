@@ -19,14 +19,9 @@ const Logo = () => {
             width={50}
             height={50}
             alt="Logo"
-            className="h-12 md:h-14 lg:h-16 transform -translate-y-2 md:-translate-y-3 lg:-translate-y-4"
+            className="h-12 md:h-14 lg:h-20 transform -translate-y-3 md:-translate-y-3.5 lg:-translate-y-5 -mx-3.5 md:-mx-2.5 lg:-mx-3.1"
             priority={true}
           />
-          {/* <img
-            src="/Logo.svg"
-            alt="Logo"
-            className="h-12 md:h-14 lg:h-16 transform -translate-y-2 md:-translate-y-3 lg:-translate-y-4"
-          /> */}
           <span>BLADES</span>
         </h1>
       </Link>

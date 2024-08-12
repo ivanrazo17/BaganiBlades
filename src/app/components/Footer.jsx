@@ -22,7 +22,7 @@ const Footer = () => {
 
         <div className="flex flex-col md:flex-row items-center space-y-4 md:space-y-0 md:space-x-4">
           <h4>©2024 Bagani Blades</h4>
-          <h4>Designed by: Ivan Razo</h4>
+          <h4>Designed & Programmed by: Akai47 & Loydie16</h4>
           <h4 className="underline cursor-pointer">Terms of Use</h4>
           <h4 className="underline cursor-pointer">Privacy Policy</h4>
         </div>
