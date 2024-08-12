@@ -28,59 +28,62 @@ const ProductMenu = () => {
     }
     
     return (
-      <div className="flex flex-col md:flex-row w-full h-auto md:h-[508px]  gap-10 justify-center items-center">
-        {/* <div className="flex flex-row relative w-full h-[300px] md:w-[600px] md:h-[508px] mb-4">
-          <Image
-            src={product.image}
-            alt={product.name}
-            layout="fill"
-            objectFit="cover"
-            priority={true}
-          />
-          <div className="flex md:flex-col w-full md:w-[80px] h-auto md:h-full mb-4 md:mr-4">
-            {[...Array(4)].map((_, index) => (
-              <div
-                key={index}
-                className="relative w-[60px] h-[60px] md:w-[80px] md:h-[80px] mb-2"
-              >
-                <Image
-                  src={product.image}
-                  alt={product.name}
-                  layout="fill"
-                  objectFit="cover"
-                  priority={true}
-                />
-              </div>
-            ))}
-          </div>
-        </div> */}
-
-        <div className="flex flex-col justify-center items-center">
-          <Image
-            src={product.image}
-            alt={product.name}
-            width={350}
-            height={350}
-            objectFit="cover"
-            priority={true}
-          />
-          <div className="flex flex-row w-full gap-4 justify-center items-center">
-            {[...Array(4)].map((_, index) => (
-              <div
-                key={index}
-                className="relative w-[60px] h-[60px] md:w-[80px] md:h-[80px] mb-2"
-              >
-                <Image
-                  src={product.image}
-                  alt={product.name}
-                  layout="fill"
-                  objectFit="cover"
-                  priority={true}
-                />
-              </div>
-            ))}
-          </div>
+      <div className="flex flex-col md:flex-row w-full h-auto md:h-[508px] gap-2 justify-center items-center px-10">
+{/* Vertical Images (for md and larger devices) */}
+<div className='hidden lg:flex flex-col w-[80px] h-full mr-2'>
+    {[...Array(4)].map((_, index) => (
+        <div key={index} className='relative w-[80px] h-[80px] mb-2'>
+            <Image
+                src={product.image} 
+                alt={product.name}                  
+                layout="fill"                 
+                objectFit="cover"
+                priority={true}
+            />
         </div>
+    ))}
+</div>
+
+{/* Main Image (for md and larger devices with different sizes) */}
+<div className='relative hidden lg:block md:w-[450px] md:h-[360px] lg:w-[600px] lg:h-[508px]'>
+    <Image
+        src={product.image} 
+        alt={product.name} 
+        layout="fill"                 
+        objectFit="cover"
+        priority={true}
+    />
+</div>
+
+{/* Horizontal Images (for sm devices only) */}
+<div className='lg:hidden flex flex-col gap-2 justify-center items-center'>
+    <Image
+        src={product.image}
+        alt={product.name}
+        width={350}
+        height={350}
+        objectFit="cover"
+        priority={true}
+    />
+    <div className="flex flex-row w-full gap-4 justify-center items-center">
+        {[...Array(4)].map((_, index) => (
+            <div
+                key={index}
+                className="relative w-[60px] h-[60px] md:w-[80px] md:h-[80px] mb-2"
+            >
+                <Image
+                    src={product.image}
+                    alt={product.name}
+                    layout="fill"
+                    objectFit="cover"
+                    priority={true}
+                />
+            </div>
+        ))}
+    </div>
+</div>
+
+
 
         <div className="flex flex-col justify-center items-center">
           <h1 className="text-xl mb-2 text-[#09761C]">In Stock</h1>

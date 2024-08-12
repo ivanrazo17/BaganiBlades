@@ -110,55 +110,60 @@ const ProductData = [
       ],
   },
   {
-    "name": "Divine Axe Rhitta - Seven Deadly Sins",
-    "price": "₱2000",
-    "category": "Melee",
-    "description": "Unleash the power of the Divine Axe Rhitta from Seven Deadly Sins.\\n\\nDetailed Design:\\n- Features the iconic design of the axe used in the series.\\n- Crafted with high-quality materials.\\n\\nFeatures:\\n- Ideal for cosplay events or as a display piece.\\n- A great addition to any Seven Deadly Sins collection.\\n\\nOther Information:\\n- A must-have for fans and collectors.",
-    "reviews": [
-      { "title": "Amazing Replica", "text": "The axe looks amazing and is a perfect replica of the one from the series.", "author": "SevenDeadlyFan" },
-      { "title": "Great Quality", "text": "Excellent quality and design. A fantastic addition to my collection.", "author": "AnimeLover" }
-    ]
+      name: "Divine Axe Rhitta Seven Deadly Sins",
+      image: "/assets/ProductList/item11.png",
+      description: "Unleash the power of the Divine Axe Rhitta from Seven Deadly Sins.\\n\\nDetailed Design:\\n- Features the iconic design of the axe used in the series.\\n- Crafted with high-quality materials.\\n\\nFeatures:\\n- Ideal for cosplay events or as a display piece.\\n- A great addition to any Seven Deadly Sins collection.\\n\\nOther Information:\\n- A must-have for fans and collectors.",
+      price: "₱2000",
+      category: "Melee",
+      reviews: [
+        { title: "Amazing Replica", text: "The axe looks amazing and is a perfect replica of the one from the series.", author: "SevenDeadlyFan" },
+        { title: "Great Quality", text: "Excellent quality and design. A fantastic addition to my collection.", author: "AnimeLover" }
+      ]
   },
   {
-    "name": "VCT LOCK//IN Knife - Valorant",
-    "price": "₱2000",
-    "category": "Melee",
-    "description": "Gear up with the VCT LOCK//IN Knife from Valorant.\\n\\nDetailed Design:\\n- Features the sleek design of the knife used in the game.\\n- Made with high-quality materials.\\n\\nFeatures:\\n- Ideal for cosplay events or as a display piece.\\n- Adds an authentic touch to your Valorant experience.\\n\\nOther Information:\\n- A must-have for Valorant enthusiasts.",
-    "reviews": [
-      { "title": "Fantastic Detail", "text": "The knife has fantastic detail and feels just like the one from Valorant.", "author": "ValorantFan" },
-      { "title": "Perfect for Cosplay", "text": "Perfect addition for cosplay. Great quality and design.", "author": "GameCollector" }
-    ]
+      name: "VCT LOCK//IN Knife Valorant",
+      image: "/assets/ProductList/item12.png",
+      description: "Gear up with the VCT LOCK//IN Knife from Valorant.\\n\\nDetailed Design:\\n- Features the sleek design of the knife used in the game.\\n- Made with high-quality materials.\\n\\nFeatures:\\n- Ideal for cosplay events or as a display piece.\\n- Adds an authentic touch to your Valorant experience.\\n\\nOther Information:\\n- A must-have for Valorant enthusiasts.",
+      price: "₱2000",
+      category: "Melee",
+      reviews: [
+        { title: "Fantastic Detail", text: "The knife has fantastic detail and feels just like the one from Valorant.", author: "ValorantFan" },
+        { title: "Perfect for Cosplay", text: "Perfect addition for cosplay. Great quality and design.", author: "GameCollector" }
+      ]
   },
   {
-    "name": "Sentinel of Light Vandal - Valorant",
-    "price": "₱5000",
-    "category": "Firearms",
-    "description": "Strike fear with the Sentinel of Light Vandal from Valorant.\\n\\nDetailed Design:\\n- Features the distinct design of the Vandal weapon from the game.\\n- Constructed with high-quality materials.\\n\\nFeatures:\\n- Ideal for cosplay events or as a display piece.\\n- Brings the intense gameplay of Valorant to life.\\n\\nOther Information:\\n- A must-have for Valorant fans and collectors.",
-    "reviews": [
-      { "title": "Impressive Build", "text": "The Vandal is built impressively and captures the essence of the game.", "author": "FPSFanatic" },
-      { "title": "Great Detail", "text": "Incredible detail and quality. Definitely worth the price.", "author": "ValorantCollector" }
-    ]
+      name: "Sentinel of Light Vandal Valorant",
+      image: "/assets/ProductList/item13.png",
+      description: "Strike fear with the Sentinel of Light Vandal from Valorant.\\n\\nDetailed Design:\\n- Features the distinct design of the Vandal weapon from the game.\\n- Constructed with high-quality materials.\\n\\nFeatures:\\n- Ideal for cosplay events or as a display piece.\\n- Brings the intense gameplay of Valorant to life.\\n\\nOther Information:\\n- A must-have for Valorant fans and collectors.",
+      price: "₱5000",
+      category: "Firearms",
+      reviews: [
+        { title: "Impressive Build", text: "The Vandal is built impressively and captures the essence of the game.", author: "FPSFanatic" },
+        { title: "Great Detail", text: "Incredible detail and quality. Definitely worth the price.", author: "ValorantCollector" }
+      ]
   },
   {
-    "name": "Saw Cleaver - Bloodborne",
-    "price": "₱7000",
-    "category": "Melee",
-    "description": "Embrace the horror with the Saw Cleaver from Bloodborne.\\n\\nDetailed Design:\\n- Features the menacing design of the cleaver used in the game.\\n- Made with durable materials.\\n\\nFeatures:\\n- Ideal for cosplay events or as a display piece.\\n- Captures the dark and eerie atmosphere of Bloodborne.\\n\\nOther Information:\\n- A must-have for Bloodborne enthusiasts.",
-    "reviews": [
-      { "title": "Stunning Replica", "text": "The Saw Cleaver is a stunning replica and a great addition to my collection.", "author": "HorrorFan" },
-      { "title": "High Quality", "text": "High quality and detailed. Perfect for Bloodborne fans.", "author": "GameEnthusiast" }
-    ]
+      name: "Saw Cleaver Bloodborne",
+      image: "/assets/ProductList/item14.png",
+      description: "Embrace the horror with the Saw Cleaver from Bloodborne.\\n\\nDetailed Design:\\n- Features the menacing design of the cleaver used in the game.\\n- Made with durable materials.\\n\\nFeatures:\\n- Ideal for cosplay events or as a display piece.\\n- Captures the dark and eerie atmosphere of Bloodborne.\\n\\nOther Information:\\n- A must-have for Bloodborne enthusiasts.",
+      price: "₱7000",
+      category: "Melee",
+      reviews: [
+        { title: "Stunning Replica", text: "The Saw Cleaver is a stunning replica and a great addition to my collection.", author: "HorrorFan" },
+        { title: "High Quality", text: "High quality and detailed. Perfect for Bloodborne fans.", author: "GameEnthusiast" }
+      ]
   },
   {
-    "name": "Moon Stick Wand - Sailor Moon",
-    "price": "₱2000",
-    "category": "Staves",
-    "description": "Channel your inner Sailor Moon with the Moon Stick Wand.\\n\\nDetailed Design:\\n- Features the iconic design of the wand from the series.\\n- Crafted with attention to detail and high-quality materials.\\n\\nFeatures:\\n- Ideal for cosplay events or as a display piece.\\n- A beautiful addition to any Sailor Moon collection.\\n\\nOther Information:\\n- A must-have for fans and collectors.",
-    "reviews": [
-      { "title": "Beautiful Design", "text": "The Moon Stick Wand has a beautiful design and is perfect for any Sailor Moon fan.", "author": "SailorMoonFan" },
-      { "title": "Great Quality", "text": "Great quality and attention to detail. A wonderful addition to my collection.", "author": "AnimeCollector" }
-    ]
-  },
+      name: "Moon Stick Wand Sailor Moon",
+      image: "/assets/ProductList/item15.png",
+      description: "Channel your inner Sailor Moon with the Moon Stick Wand.\\n\\nDetailed Design:\\n- Features the iconic design of the wand from the series.\\n- Crafted with attention to detail and high-quality materials.\\n\\nFeatures:\\n- Ideal for cosplay events or as a display piece.\\n- A beautiful addition to any Sailor Moon collection.\\n\\nOther Information:\\n- A must-have for fans and collectors.",
+      price: "₱2000",
+      category: "Staves",
+      reviews: [
+        { title: "Beautiful Design", text: "The Moon Stick Wand has a beautiful design and is perfect for any Sailor Moon fan.", author: "SailorMoonFan" },
+        { title: "Great Quality", text: "Great quality and attention to detail. A wonderful addition to my collection.", author: "AnimeCollector" }
+      ]
+  }
   
 
 ];

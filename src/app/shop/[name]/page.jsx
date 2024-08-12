@@ -8,7 +8,7 @@ import Review from './Review.jsx';
 import LimitedProductCards from './LimitedProductCards.jsx';
 import Newsletter from '../../../app/components/Newsletter.jsx';
 import Footer from '../../../app/components/Footer.jsx';
-
+import Image from 'next/image.js';
 export default function ProductPage() {
     // Extract the product name from the URL
     const { name } = useParams();
@@ -20,46 +20,37 @@ export default function ProductPage() {
     return (
         
         <div className="product-page">
+            {/* Breadcrumbs */}
+            <span className='flex flex-row-1 gap-2 text-[#504d4d] m-3 ml-[120px]'>
+                <Link href="/">
+                    <h1>Home &gt;</h1>
+                </Link>
 
-            <div className="w-full h-full flex flex-col items-center justify-center">
-                {/* Breadcrumbs */}
-                <span className='flex flex-row-1 gap-2 text-[#504d4d] m-3'>
-                    <Link href="/">
-                        <h1>Home &gt;</h1>
-                    </Link>
-
-                    <Link href="../shop">
-                        <h1>Shop &gt;</h1>
-                    </Link>
+                <Link href="../shop">
+                    <h1>Shop &gt;</h1>
+                </Link>
+                
+                <Link href="../shop">
+                    {product.category}
                     
-                    <Link href="../shop">
-                        {product.category}
-                    </Link>
-                </span>
-
+                </Link>
+            </span>
+            <div className="w-full h-full flex flex-col items-center justify-center">           
                 {/* Product Menu Component */}
                 <div>
                     <ProductMenu/>
                 </div>
-
-                {/* Description Component */}
-              
+                {/* Description Component */}      
                     <Description/>
-                
-
-                {/* Review Component */}
-                
+                {/* Review Component */}         
                     <Review/>    
-                
-
                 {/* Other Products */}
                 <div className='mb-6'>
                     <h1 className='font-semibold text-2xl mb-4 px-4'>You may also like</h1>
                     <LimitedProductCards maxItems={3} />  {/* Use the new component */}
                 </div>
-                
-
             </div>
+
             {/* Newsletter */}
             <div>
                 <Newsletter/>
@@ -76,8 +67,8 @@ export default function ProductPage() {
                 ">
                 AVAILABLE MODE OF PAYMENTS
                 </h1>
-                <img 
-                    src="/assets/Contact/Payments.png" 
+                <Image
+                    src="/assets/Contact/Payments.png"
                     alt="Payment Methods"
                     className="
                         object-cover 
@@ -85,7 +76,10 @@ export default function ProductPage() {
                         w-3/4 sm:w-2/3 md:w-1/2 lg:w-1/3
                         max-w-full 
                         h-auto
-                    " 
+                    "
+                    layout="responsive"
+                    width={800} 
+                    height={600} 
                 />
             </div>
             {/* Footer */}
@@ -94,6 +88,6 @@ export default function ProductPage() {
             </div>
         </div>
     );
-    }
+}
 
 

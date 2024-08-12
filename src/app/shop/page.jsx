@@ -13,7 +13,7 @@ import { Star, ShoppingCart } from "lucide-react";
 import Footer from "../components/Footer";
 import Image from "next/image";
 
-export const ProductList = [
+const ProductList = [
   {
     id: 0,
     name: "Blade of Olympus - God of War",
@@ -100,7 +100,8 @@ export const ProductList = [
     price: "₱2000",
     imageSrc: "/assets/ProductList/item11.png",
     category: "Melee",
-    href: "Divine Axe Rhitta Seven Deadly Sins",
+    category: "Melee",
+    href: "Divine Axe Rhitta Seven Deadly Sins",     
   },
   {
     id: 11,
