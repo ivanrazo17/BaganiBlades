@@ -9,7 +9,7 @@ Bagani Blades features:
 - **Integrated Electronics**: For a more immersive experience.
 - **User-Friendly Interface**: Designed with ReactJS and Next.js for a seamless shopping experience.
 
-![Website Thumbnail](/thumbnails/thumbnails.PNG)
+![Website Thumbnail](/public/thumbnails/thumbnails.PNG)
 
 ## Tech Stack
 
